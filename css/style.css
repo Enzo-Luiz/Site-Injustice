@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+body{
+    width: 100%;
+    min-height: 70%;
+
+}
+  
+section{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow-y: hidden ;
+}
+
+section div.fundo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+}
+
+section div.fundo video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+section div.box{
+    width: 75%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section div.box div.logo{
+    width: 80%;
+}
+
+section div.box img{
+    width: 80%;
+    min-width: 300px;
+    padding-top: 35%;
+    padding-bottom: 30% ;
+}
+
+section div.texto{
+    background: linear-gradient(to right, rgb(0, 0, 0, 0.9), transparent);
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+section div.textoo{ 
+    background: linear-gradient(to right, rgb(0, 0, 0, 0.9), transparent);
+    padding: 20px;
+    padding-top: 5%;
+}
+section div.textooo{ 
+    
+    padding: 20px;
+    padding-top: 5%;
+}
+
+section div.texto h2{
+    color: #FFF;
+    font-size: 24px;
+    padding-bottom: 20px;
+    padding-left: 90px;
+    font-size: 60px;
+} 
+
+section div.texto p{   
+    color: #fff;
+    font-size: 24px;
+    padding-left: 90px;
+    margin-bottom: 15px;
+}
+section div.textoo h2{
+    color: #FFF;
+    font-size: 24px;
+    padding-bottom: 20px;
+    padding-left: 90px;
+    font-size: 60px;
+} 
+section div.textooo h2{
+    color: #FFF;
+    font-size: 24px;
+    font-size: 60px;
+    padding-bottom:20px ;
+    text-align: center;
+} 
+
+section div.textoo p{   
+    color: #fff;
+    font-size: 24px;
+    padding-left: 90px;
+    margin-bottom: 15px;
+}
+
+#cabecalho{
+    margin-bottom: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color:rgb(56, 55, 55);
+}
+
+#cabecalho #icone{
+    width: 50px;
+    
+}
+#cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu ul{
+    display: flex;
+}
+#menu ul li{
+    list-style: none;
+}
+#menu .submenu{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color:rgb(56, 55, 55);
+}
+#menu ul li a{
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    transition: all .2s linear;
+    
+}
+#menu ul li a:hover{
+    background-color:rgb(80, 78, 78);
+}
+#menu ul li:hover .submenu{
+    display: block;
+    
+}
+#rodape{
+    position: sticky; /* Torna o rodapé sticky */
+    width: 100%;
+    background-color: rgb(56, 55, 55);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+#rodape a {
+    color:#FFF;
+    text-decoration: none;
+}
+
+#rodape a:hover{
+    text-decoration: underline;
+}
+#fotos #galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#fotos #galeria img {
+    width: 100%;
+    transition: all .3s linear;
+    padding-bottom: 30px;
+}
+
+#fotos #galeria img:hover {
+    transform: scale(1.0);
+}
+
+#fotos #galeria2{
+    size: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    grid-auto-rows: 500px;
+    
+}
+#fotos #galeria a{
+    color: #fff;
+    text-align: center;
+    font-size: large;
+
+}
+#fotos #galeria2 a{
+    color: #fff;
+    text-align: center;
+    font-size: large;
+}
+#fotos #galeria3 a{
+    color: #fff;
+    text-align: center;
+    font-size: large;
+}
+#fotos #galeria4 a{
+    color: #fff;
+    text-align: center;
+    font-size: large;
+}
+
+#fotos #galeria2 img {
+    width: 100%;
+    transition: all .3s linear;
+}
+
+#fotos #galeria2 img:hover {
+    transform: scale(1.1);
+
+}
+#fotos #galeria3{
+    size: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    grid-auto-rows: 500px;
+}
+#fotos #galeria3 img {
+    width: 100%;
+    transition: all .3s linear;
+}
+
+#fotos #galeria3 img:hover {
+    transform: scale(1.1);
+}
+#videos #galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+#videos #galeria4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fotos #galeria4 img:hover {
+    transform: scale(1.1); 
+}
+#fotos #galeria img:hover {
+    transform: scale(1.1);
+}
